@@ -1,5 +1,7 @@
 public class StringConcat {
     public static void main(String[] args) {
+        // String 是 Java 中一个不可变的类，一旦实例化就无法被修改
+
         // s -> "abcd" in heap
         String s1 = "abcd";
         // s2 and s -> "abcd" in heap
@@ -14,7 +16,97 @@ public class StringConcat {
         // 最后调用 toString() 方法
         // 底层是一个 new String()
 
-        // StringBuffer
+        // StringBuffer 线程安全，并发场景使用
+        StringBuffer buffer = new StringBuffer("Hollis");
+        String introduce = "introduce";
+        buffer = buffer.append(",").append(introduce);
 
+        // StringBuilder 线程不安全，效率最高
+        StringBuilder builder = new StringBuilder("Hollis");
+        builder = builder.append(",").append(introduce);
+
+        // StringUtils.join (apache.commons)
+        // StringUtils.join("wechat", ",", introduce);
+
+        String[] list = {"Hollis", "introduce"};
+        // String result = StringUtils.join(list, ",");
+
+        // String.join (JDK8)
+        String result = String.join(",", list);
+
+        // string concat in JDK
+        // public String concat(String str) {
+        //      int otherLen = str.length();
+        //      if (otherLen == 0) {
+        //          return this;
+        //      }
+        //      int len = value.length;
+        //      char[] buf = Arrays.copyOf(value, len + otherLen);
+        //      str.getChars(buf, len);
+        //      return new String(buf, true);
+        // }
+    }
+}
+
+//class AbstractStringBuilder {
+//    private int count;
+//    private char[] value;
+//
+//    public AbstractStringBuilder append(String str) {
+//        if (str == null) {
+//            return appendNull();
+//        }
+//        int len = str.length();
+//        ensureCapacityInternal(count + len);
+//        str.getChars(0, len, value, count);
+//        count += len;
+//        return this;
+//    }
+//}
+
+//class StringBuilder extends AbstractStringBuilder {
+//    @Override
+//    public StringBuilder append(String str) {
+//        super.append(str);
+//        return this;
+//    }
+//}
+
+//class StringBuffer extends AbstractStringBuilder {
+//    // TODO check this
+//    private String toStringCache;
+//
+//    @Override
+//    public synchronized StringBuffer append(String str) {
+//        toStringCache = null;
+//        super.append(str);
+//        return this;
+//    }
+//}
+
+class StringUtils {
+    public static String join(final Object[] array, String separator, final int startIndex, final int endIndex) {
+        if (array == null) {
+            return null;
+        }
+        if (separator == null) {
+            return null;
+        }
+
+        final int noOfItems = endIndex - startIndex;
+        if (noOfItems <= 0) {
+            // return EMPTY;
+        }
+
+        final StringBuilder buf = new StringBuilder(noOfItems * 16);
+        for (int i = startIndex; i < endIndex; i++) {
+            if (i > startIndex) {
+                buf.append(separator);
+            }
+            if (array[i] != null) {
+                 buf.append(array[i]);
+            }
+        }
+        return buf.toString();
     }
 }
