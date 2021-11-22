@@ -1,10 +1,15 @@
+package classes;
+
+/**
+ * @author Sun
+ */
 public class InitialSequence {
     // 1. 静态属性
-    private static final String staticField = getStaticField();
+    private static final String STATIC_FIELD = getStaticField();
 
     // 2. 静态方法块
     static {
-        System.out.println(staticField);
+        System.out.println(STATIC_FIELD);
         System.out.println("静态方法块初始化");
     }
 
@@ -29,7 +34,6 @@ public class InitialSequence {
         return "Field Initial";
     }
 
-    // 主函数
     public static void main(String[] argc) {
         new InitialSequence();
     }

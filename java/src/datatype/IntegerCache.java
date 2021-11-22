@@ -1,3 +1,5 @@
+package datatype;
+
 public class IntegerCache {
     // IntegerCache 缓存对象：
     // 1. [-128, 127]

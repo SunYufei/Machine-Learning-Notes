@@ -1,3 +1,5 @@
+package collections;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -7,14 +9,16 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Collection 集合接口
  * Collections 包装类
+ *
+ * @author Sun
  */
-public class CollectionsDemo {
+public class Demo {
     /**
      * fast-fail 机制
      * Collection 中一种错误检测机制
      * 当迭代集合的过程中该集合在结构上发生改变的时候
      * 可能会发生 fast-fail，
-     * 即抛出 ConcruuentModificationException 异常
+     * 即抛出 ConcurrentModificationException 异常
      */
 
     public void list() {
@@ -87,7 +91,7 @@ public class CollectionsDemo {
          */
     }
 
-    public void map() {
+    public void map() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, NoSuchFieldException {
         /*
          * HashMap vs HashTable
          *
@@ -125,41 +129,10 @@ public class CollectionsDemo {
          */
 
         Hashtable<String, String> hashTable = new Hashtable<>();
-        Map<String, String> hashMap = new HashMap<>();
-        Map<String, String> concurrentHashMap = new ConcurrentHashMap<>();
+        Map<String, String> hashMap = new HashMap<>(16);
+        Map<String, String> concurrentHashMap = new ConcurrentHashMap<>(16);
     }
 
-    private class MyHashMap {
-        // Map 中 KV 对的个数
-        private transient int size;
-
-        // 装载因子，衡量 HashMap 满的程度
-        private float loadFactor = DEFAULT_LOAD_FACTOR;
-        private static final float DEFAULT_LOAD_FACTOR = 0.75f;
-
-        // 临界值，实际 KV 个数超过 threshold 时，HashMap 扩容
-        // threshold = 容量 * 装载因子
-        private int threshold;
-
-        // 容量，不指定时默认为 16
-        // 通过构造函数指定时，会选择大于该数字的第一个 2 的幂作容量
-        // 当已知 map 中存放元素个数时，应制定其大小
-        private int capacity = DEFAULT_INITIAL_CAPACITY;
-        static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
-
-
-        // hash 方法
-        final int hash(Object key) {
-            // 高 16 位与低 16 位的异或
-            int h;
-            return key == null ? 0 : (h = key.hashCode()) ^ (h >>> 16);
-        }
-
-        // hashCode -> 数组下标，Java 7
-        int indexFor(int hash, int length) {
-            return hash & (length - 1);
-        }
-    }
 
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, NoSuchFieldException {
         Map<Integer, Integer> map = new HashMap<>();
@@ -174,3 +147,4 @@ public class CollectionsDemo {
         System.out.println("size: " + size.get(map));
     }
 }
+

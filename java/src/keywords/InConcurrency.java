@@ -1,4 +1,9 @@
-public class KeywordsInConcurrency {
+package keywords;
+
+/**
+ * @author Sun
+ */
+public class InConcurrency {
     /*
      * 可见性：
      * 多个线程访问同一个变量，
@@ -43,7 +48,7 @@ public class KeywordsInConcurrency {
      * synchronized
      * 解决并发情况下数据同步访问
      * 被修饰的代码块及方法，在同一时间内只能被单个线程访问
-     *
+     * <p>
      * 用法：
      * 修饰方法或代码块，
      * 对类或者对象加锁
@@ -53,7 +58,7 @@ public class KeywordsInConcurrency {
     }
 
     public void doOtherThings() {
-        synchronized (KeywordsInConcurrency.class) {
+        synchronized (InConcurrency.class) {
             System.out.println("同步代码块");
         }
     }
@@ -62,26 +67,4 @@ public class KeywordsInConcurrency {
      * synchronized 保证原子性、有序性和可见性
      * volatile 只能保证有序性和可见性
      */
-}
-
-/**
- * 双重校验锁单例模式
- */
-class Singleton {
-    // volatile 修饰可能被多个线程同时访问的 singleton
-    private volatile static Singleton singleton;
-
-    private Singleton() {
-    }
-
-    public static Singleton getSingleton() {
-        if (singleton == null) {
-            synchronized (Singleton.class) {
-                if (singleton == null) {
-                    singleton = new Singleton();
-                }
-            }
-        }
-        return singleton;
-    }
 }

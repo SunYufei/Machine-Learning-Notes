@@ -1,6 +1,11 @@
+package datatype;
+
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Sun
+ */
 public class Boxing {
     public static void main(String[] args) {
         // auto boxing

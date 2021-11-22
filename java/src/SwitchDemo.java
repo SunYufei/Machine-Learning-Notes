@@ -1,3 +1,6 @@
+/**
+ * @author Sun
+ */
 public class SwitchDemo {
     public static void main(String[] args) {
         // switch 支持 byte short int char String

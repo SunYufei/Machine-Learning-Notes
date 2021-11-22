@@ -1,13 +1,19 @@
+package keywords;
+
 import java.util.ArrayList;
 import java.util.Vector;
 
-public class Keywords {
+/**
+ * @author Sun
+ */
+public class InClass {
     /**
      * transient 修饰的成员变量
      * 在序列化时，其值会被忽略
      * 在反序列化后，变量值设为初始值
+     *
+     * elementData in ArrayList
      */
-    // elementData in ArrayList
     private transient Object[] elementData;
 
     /**
@@ -52,14 +58,16 @@ public class Keywords {
      * 静态方法用于给其他类使用而不需要创建实例
      */
     public static void setCount(int count) {
-        if (count < 0)
-            Keywords.count = count;
+        if (count < 0) {
+            InClass.count = count;
+        }
     }
 
     public static int addNums(int pre, int... nums) {
         int sum = pre;
-        for (int x : nums)
+        for (int x : nums) {
             sum += x;
+        }
         return sum;
     }
 
