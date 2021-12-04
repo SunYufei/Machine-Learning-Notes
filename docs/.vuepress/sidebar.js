@@ -9,11 +9,20 @@ const docs = path.resolve(__dirname, '../../docs');
  * @returns {string?}
  */
 function getTitle(absDir, h1 = true) {
-    let content;
+    let content = '';
     const stat = fs.statSync(absDir);
     if (stat.isDirectory()) {
+        // 对于目录，标题检查来源
+        // 1. .title
+        // 2. README.md
+        // 2.1 front matter 'title: '
+        // 2.2 H1
+        const absTitle = path.join(absDir, '.title');
+        let exist = fs.existsSync(absTitle);
+        if (exist)
+            return fs.readFileSync(absTitle, 'utf-8');
         const absReadme = path.join(absDir, 'README.md');
-        const exists = fs.existsSync(absReadme);
+        let exists = fs.existsSync(absReadme);
         if (!exists)
             return path.basename(absDir);
         content = fs.readFileSync(absReadme, 'utf-8');
@@ -42,7 +51,7 @@ function getTitle(absDir, h1 = true) {
  * @param {string} readmeTitle
  * @returns {[any]}
  */
-function getChildren(dir, readmeTitle = '简介') {
+function getChildren(dir, readmeTitle = '大纲') {
     const absDir = path.join(docs, dir);
     const children = [];
     const absReadme = path.join(absDir, 'README.md');
@@ -52,7 +61,7 @@ function getChildren(dir, readmeTitle = '简介') {
         children.push([dir, title])
     }
     for (const item of fs.readdirSync(absDir)) {
-        if (item == 'README.md')
+        if (item == 'README.md' || item == '.title')
             continue;
         const absItem = path.join(absDir, item);
         const relItem = path.join(dir, item).replace(/\\/g, '/');
@@ -104,20 +113,5 @@ function getSidebar(...items) {
     }
     return sidebar;
 }
-
-// getSidebar(
-//     '/java/',
-//     '/db/',
-//     '/spring/',
-//     '/git.md',
-//     '/os/',
-//     '/net/',
-//     '/algorithm/',
-//     '/design-pattern/',
-//     '/micro-service/',
-//     '/container/',
-//     '/architecture/',
-//     '/front-end/'
-// ).forEach(item => console.log(item))
 
 module.exports = getSidebar;

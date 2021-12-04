@@ -4,7 +4,7 @@ module.exports = {
     locales: {
         '/': {
             lang: 'zh-CN',
-            title: 'Notes',
+            title: '知识库',
             description: 'Accumulating Knowledge'
         }
     },
@@ -18,7 +18,7 @@ module.exports = {
         // displayAllHeaders: false,
         lastUpdated: '最近更新',
         nav: [
-            { text: '博客', link: 'https://sunyufei.ml' },
+            { text: '博客', link: 'https://blog.sunyufei.ml' },
             { text: 'GitHub', link: 'https://github.com/SunYufei/' }
         ],
         nextLinks: true,
@@ -33,6 +33,8 @@ module.exports = {
             '/net/',
             '/algorithm/',
             '/design-pattern/',
+            '/middle-ware/',
+            '/ORM/',
             '/micro-service/',
             '/container/',
             '/architecture/',

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "test": "node docs/.vuepress/sidebar.js"
+    "test": "node docs/.vuepress/sidebar.test.js"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "1.8.2",

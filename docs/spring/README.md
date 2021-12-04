@@ -1,4 +1,4 @@
-# Spring
+# Spring⭐⭐⭐⭐⭐
 
 - Mapper / DAO：Data Access Object，数据持久层，对数据库进行持久化操作。在 DAO 层里写接口，SQL 语句写在 Mapper 文件里。
 - Service：业务层 / 服务层，负责业务模块的逻辑应用设计。 Service 层的实现，具体调用到已经定义的 DAO 接口，封装 Service 层的业务逻辑有利于通用的业务逻辑的独立性和重复利用性。如果把 DAO 层当作积木，那么 Service 层则是对积木的搭建。
@@ -10,14 +10,14 @@
 - PO：Persistant Object，持久层对象，对应数据库中表的字段，一个 PO 是数据库中的一条记录。
 - DTO：Data Transfer Object，数据传输对象。
 
-## Spring 5
+## Spring 5⭐⭐⭐⭐⭐
 
 Java轻量级应用框架
 
 - IoC控制反转
 - AOP面向切片编程
 
-## SpringMVC
+## SpringMVC⭐⭐⭐⭐⭐
 
 Java轻量级Web开发框架
 
@@ -28,7 +28,7 @@ Java轻量级Web开发框架
 - 配置
 - 执行过程
 
-## Spring Boot
+## Spring Boot⭐⭐⭐⭐⭐
 
 自动配置，开箱即用
 
@@ -93,7 +93,7 @@ Mybatis 的增强工具，能够简化开发、提高效率
 
 #### Shiro
 
-#### Spring Security
+#### Spring Security⭐⭐⭐
 
 Spring 的安全管理框架
 
