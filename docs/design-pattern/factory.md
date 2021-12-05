@@ -19,4 +19,4 @@
 
 ## 抽象工厂模式
 
-<<< @/design-pattern/src/factory/AbstractFactory.java
+<<< design-pattern/src/factory/AbstractFactory.java

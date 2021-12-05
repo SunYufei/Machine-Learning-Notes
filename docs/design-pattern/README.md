@@ -41,7 +41,7 @@
     - 《大话设计模式》
     - 《设计模式：可复用面向对象软件的基础》（大黑书，有能力的话也可以去读）
 - 视频
-    - 尚硅谷图解 Java 设计模式：https://www.bilibili.com/video/BV1G4411c7N4
+    - [尚硅谷图解 Java 设计模式](https://www.bilibili.com/video/BV1G4411c7N4)
 - 文档
-    - 菜鸟教程：https://www.runoob.com/design-pattern/design-pattern-tutorial.html
-    - 图说设计模式：https://design-patterns.readthedocs.io/zh_CN/latest/
+    - [菜鸟教程](https://www.runoob.com/design-pattern/design-pattern-tutorial.html)
+    - [图说设计模式](https://design-patterns.readthedocs.io/zh_CN/latest/)

@@ -14,4 +14,4 @@
     - 《网络是怎样连接的》
     - ⭐《图解 TCP / IP》
 - 大学课件
-    - 浙大计算机网络基础：https://github.com/QSCTech/zju-icicles
+    - [浙大计算机网络基础](https://github.com/QSCTech/zju-icicles)

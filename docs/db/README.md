@@ -36,11 +36,11 @@
 ### 资源
 
 - 视频
-    - ⭐ 老杜 - mysql入门基础 + 数据库实战：https://www.bilibili.com/video/BV1Vy4y1z7EX（较新、内容相对精炼，有习题）
-    - 尚硅谷 - MySQL基础教程：https://www.bilibili.com/video/BV1xW411u7ax（小姐姐讲课，但感觉音质一般）
+    - ⭐ [老杜 - mysql入门基础 + 数据库实战](https://www.bilibili.com/video/BV1Vy4y1z7EX)（较新、内容相对精炼，有习题）
+    - [尚硅谷 - MySQL基础教程](https://www.bilibili.com/video/BV1xW411u7ax)（小姐姐讲课，但感觉音质一般）
 - 在线练习
-    - ⭐ SQL 自学网：http://xuesql.cn/
-    - ⭐ SQL 在线运行：https://www.bejson.com/runcode/sql/
+    - ⭐ [SQL 自学网](http://xuesql.cn/)
+    - ⭐ [SQL 在线运行](https://www.bejson.com/runcode/sql/)
 - 文档
     - SQL - 菜鸟教程：https://www.runoob.com/sql/sql-tutorial.html
     - MySQL - 菜鸟教程：https://www.runoob.com/mysql/mysql-tutorial.html

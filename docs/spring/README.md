@@ -155,11 +155,11 @@ Spring 的安全管理框架
 
 视频（按顺序看）
 
-- ⭐ 尚硅谷最新版 JavaWeb 全套教程：https://www.bilibili.com/video/BV1Y7411K7zz（前端部分最好也看下）
-- ⭐ 尚硅谷 - Spring 5 框架最新版教程（idea版）：https://www.bilibili.com/video/BV1Vf4y127N5
-- ⭐ 尚硅谷 - SpringMVC 2021 最新教程：https://www.bilibili.com/video/BV1Ry4y1574R
-- ⭐ 尚硅谷 - MyBatis 实战教程全套完整版：https://www.bilibili.com/video/BV1mW411M737
-- ⭐ 尚硅谷 - MyBatisPlus 教程：https://www.bilibili.com/video/BV1Ds411E76Y
-- Maven 零基础入门教程：https://www.bilibili.com/video/BV1TW411g7hP（搞不懂 Maven 可以看看）
-- ⭐ 雷丰阳 2021 版 SpringBoot2 零基础入门：https://www.bilibili.com/video/BV19K4y1L7MT
-- 尚硅谷 - SpringSecurity 框架教程：https://www.bilibili.com/video/BV15a411A7kP
+- ⭐ [尚硅谷最新版 JavaWeb 全套教程](https://www.bilibili.com/video/BV1Y7411K7zz)（前端部分最好也看下）
+- ⭐ [尚硅谷 - Spring 5 框架最新版教程（idea版）](https://www.bilibili.com/video/BV1Vf4y127N5)
+- ⭐ [尚硅谷 - SpringMVC 2021 最新教程](https://www.bilibili.com/video/BV1Ry4y1574R)
+- ⭐ [尚硅谷 - MyBatis 实战教程全套完整版](https://www.bilibili.com/video/BV1mW411M737)
+- ⭐ [尚硅谷 - MyBatisPlus 教程](https://www.bilibili.com/video/BV1Ds411E76Y)
+- [Maven 零基础入门教程](https://www.bilibili.com/video/BV1TW411g7hP)（搞不懂 Maven 可以看看）
+- ⭐ [雷丰阳 2021 版 SpringBoot2 零基础入门](https://www.bilibili.com/video/BV19K4y1L7MT)
+- [尚硅谷 - SpringSecurity 框架教程](https://www.bilibili.com/video/BV15a411A7kP)

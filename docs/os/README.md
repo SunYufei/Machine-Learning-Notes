@@ -24,7 +24,7 @@
 ## 资源
 
 - 视频
-    - 《清华操作系统原理》：https://www.bilibili.com/video/BV1uW411f72n
+    - [《清华操作系统原理》](https://www.bilibili.com/video/BV1uW411f72n)
 - 书籍
     - 《编码》
     - 《30天自制操作系统》
@@ -32,4 +32,4 @@
     - 《深入理解计算机系统》（难度较大，不推荐新手看）
     - 《 自己动手写操作系统》（国产好书，网上可以下载）
 - 大学课件
-    - 浙大操作系统：https://github.com/QSCTech/zju-icicles
+    - [浙大操作系统](https://github.com/QSCTech/zju-icicles)

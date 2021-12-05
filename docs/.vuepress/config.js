@@ -34,11 +34,12 @@ module.exports = {
             '/algorithm/',
             '/design-pattern/',
             '/middle-ware/',
-            '/ORM/',
+            '/orm/',
             '/micro-service/',
             '/container/',
             '/architecture/',
-            '/front-end/'
+            '/front-end/',
+            '/others/'
         ),
         smoothScroll: true
     }
