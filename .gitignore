@@ -1,6 +1,5 @@
 .DS_Store
 .idea/
-.settings/
 .vscode/
 docs/.vuepress/dist/
 node_modules/

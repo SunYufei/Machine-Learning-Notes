@@ -34,7 +34,7 @@ module.exports = {
             '/algorithm/',
             '/design-pattern/',
             '/middle-ware/',
-            '/orm/',
+            '/ORM/',
             '/micro-service/',
             '/container/',
             '/architecture/',

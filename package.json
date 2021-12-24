@@ -1,7 +1,6 @@
 {
   "name": "note",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev docs",
@@ -9,9 +8,9 @@
     "test": "node docs/.vuepress/sidebar.test.js"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "1.8.2",
-    "@vuepress/plugin-nprogress": "1.8.2",
-    "vuepress": "1.8.2",
-    "vuepress-plugin-pangu": "^1.0.1"
+    "@vuepress/plugin-back-to-top": "1.9.7",
+    "@vuepress/plugin-nprogress": "1.9.7",
+    "vuepress": "1.9.7",
+    "vuepress-plugin-pangu": "1.0.1"
   }
 }

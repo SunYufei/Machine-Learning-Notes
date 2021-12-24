@@ -51,7 +51,7 @@ function getTitle(absDir, h1 = true) {
  * @param {string} readmeTitle
  * @returns {[any]}
  */
-function getChildren(dir, readmeTitle = '大纲') {
+function getChildren(dir, readmeTitle = '概述') {
     const absDir = path.join(docs, dir);
     const children = [];
     const absReadme = path.join(absDir, 'README.md');
