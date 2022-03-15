@@ -16,7 +16,6 @@
 
 <<< design-pattern/src/factory/SimpleFactory.java
 
-
 ## 抽象工厂模式
 
 <<< design-pattern/src/factory/AbstractFactory.java

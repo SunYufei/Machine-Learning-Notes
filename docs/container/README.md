@@ -1,11 +1,11 @@
-# 虚拟化/容器化⭐⭐⭐⭐
+# 虚拟化/容器化 ⭐⭐⭐⭐
 
 ## 容器技术
 
-- Docker
-- Podman
+-  Docker
+-  Podman
 
 ## 容器编排技术
 
-- Kubernetes
-- Swarm
+-  Kubernetes
+-  Swarm

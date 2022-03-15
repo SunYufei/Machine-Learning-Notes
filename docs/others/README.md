@@ -1,5 +1,5 @@
 # 其他
 
-- C++
-- Machine Learning
-- MQTT物联网
+-  C++
+-  Machine Learning
+-  MQTT 物联网

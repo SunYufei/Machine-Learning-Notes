@@ -16,7 +16,7 @@
 
 [JavaSE](java)
 
-- 整理自 [Java工程师成神之路](https://hollischuang.gitee.io/tobetopjavaer/)
+-  整理自 [Java 工程师成神之路](https://hollischuang.gitee.io/tobetopjavaer/)
 
 [Machine Learning](ML)
 
