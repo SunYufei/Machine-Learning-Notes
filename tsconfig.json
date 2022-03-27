@@ -1,0 +1,14 @@
+{
+   "compilerOptions": {
+      "esModuleInterop": true,
+      "types": [
+         "node"
+      ]
+   },
+   "include": [
+      "docs/.vitepress/*.ts"
+   ],
+   "exclude": [
+      "node_modules/"
+   ]
+}

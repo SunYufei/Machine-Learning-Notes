@@ -1,4 +1,4 @@
-# Git⭐⭐⭐⭐⭐
+# Git
 
 -  区分 Git 和 GitHub
 -  工作区

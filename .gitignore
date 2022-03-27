@@ -1,9 +1,10 @@
-.DS_Store
 .idea/
 .vscode/
-docs/.vuepress/dist/
+dist/
 node_modules/
 out/
 target/
+~*
 .DS_Store
+*.out
 yarn.lock

@@ -1,14 +1,9 @@
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 
 const docs = path.resolve(__dirname, '../../docs')
 
-/**
- * @param {string} absDir
- * @param {boolean} h1
- * @returns {string?}
- */
-function getTitle(absDir, h1 = true) {
+function getTitle(absDir: string, h1: boolean = true) {
    let content = ''
    const stat = fs.statSync(absDir)
    if (stat.isDirectory()) {
@@ -41,11 +36,6 @@ function getTitle(absDir, h1 = true) {
    return null
 }
 
-/**
- * @param {string} dir
- * @param {string} readmeTitle
- * @returns {[any]}
- */
 function getChildren(dir, readmeTitle = '概述') {
    const absDir = path.join(docs, dir)
    const children = []
@@ -79,11 +69,6 @@ function getChildren(dir, readmeTitle = '概述') {
    return children
 }
 
-/**
- * 按顺序生成侧边栏
- * @param  {...any} items
- * @returns {[]} sidebar
- */
 function getSidebar(...items) {
    const sidebar = []
    for (const item of items) {
@@ -103,5 +88,3 @@ function getSidebar(...items) {
    }
    return sidebar
 }
-
-module.exports = getSidebar

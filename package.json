@@ -1,26 +1,17 @@
 {
    "name": "note",
-   "version": "1.0.0",
+   "version": "2022.3.27",
    "license": "MIT",
    "scripts": {
-      "build": "vuepress build docs",
-      "dev": "vuepress dev docs",
+      "build": "vitepress build docs",
+      "dev": "vitepress dev docs",
       "format": "prettier --write **/*.{js,jsx,ts,tsx,json,md}",
       "test": "node docs/.vuepress/sidebar.test.js"
    },
    "devDependencies": {
-      "@vuepress/plugin-back-to-top": "1.9.7",
-      "@vuepress/plugin-nprogress": "1.9.7",
-      "prettier": "^2.5.1",
-      "vuepress": "1.9.7",
-      "vuepress-plugin-pangu": "1.0.1"
-   },
-   "prettier": {
-      "quoteProps": "preserve",
-      "semi": false,
-      "singleQuote": true,
-      "tabWidth": 3,
-      "trailingComma": "es5",
-      "useTabs": false
+      "@types/node": "17",
+      "prettier": "2",
+      "typescript": "4",
+      "vitepress": "0"
    }
 }
