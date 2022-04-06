@@ -1,3 +1,5 @@
+package stream;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
@@ -5,7 +7,7 @@ import java.util.stream.Stream;
 /**
  * @author Sun
  */
-public class StreamDemo {
+public class Demo {
     /*
      * Stream 使用一种类似 SQL 语句从数据库查询数据的方式提供对 Java 集合运算和表达的高阶抽象
      * 特性：
