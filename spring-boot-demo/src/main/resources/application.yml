@@ -1,0 +1,3 @@
+logging:
+  level:
+    ml.sun.demo: debug
