@@ -1,0 +1,27 @@
+{
+   "name": "notes",
+   "version": "2022.10.20",
+   "description": "CS-Notes",
+   "scripts": {
+      "build": "vitepress build docs",
+      "dev": "vitepress dev docs",
+      "format": "prettier --write docs/**/*.{vue,js,ts,tsx,json,md}",
+      "serve": "vitepress serve docs"
+   },
+   "devDependencies": {
+      "@types/node": "18",
+      "vitepress": "latest"
+   },
+   "author": "SunYufei",
+   "license": "MIT",
+   "pnpm": {
+      "peerDependencyRules": {
+         "ignoreMissing": [
+            "@algolia/client-search",
+            "@types/react",
+            "react",
+            "react-dom"
+         ]
+      }
+   }
+}
