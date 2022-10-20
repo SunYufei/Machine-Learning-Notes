@@ -6,6 +6,12 @@
 
 使用 VitePress 搭建
 
+## 代码
+
+[机器学习](ML/)
+
 ## 许可
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh)
+代码：[MIT](LICENSE)
+
+文档：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh)
