@@ -9,6 +9,7 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 public enum ResultCode {
     OK(0, null),
+    EXCEPTION(500, "抛出异常"),
     ILLEGAL_ARG(1000, "非法参数");
 
     private final int code;
