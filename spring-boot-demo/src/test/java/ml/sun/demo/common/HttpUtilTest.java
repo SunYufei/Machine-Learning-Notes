@@ -1,6 +1,6 @@
 package ml.sun.demo.common;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import com.alibaba.fastjson2.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class HttpUtilTest {
     @Test
     public void httpTest() {
-        var json = HttpUtil.get("http://httpbin.org/get").execute(JsonNode.class);
-        log.info("origin: {}", JsonUtil.getText(json, "origin"));
+        JSONObject json = HttpUtil.get("http://httpbin.org/get").execute(JSONObject.class);
+        log.info("origin: {}", json.getString("origin"));
     }
 }
