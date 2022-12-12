@@ -1,4 +1,4 @@
-package buider;
+package builder;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
@@ -18,18 +18,6 @@ public final class Builder<T> {
 
     public static <T> Builder<T> of(Supplier<T> constructor) {
         return new Builder<>(constructor);
-    }
-
-    public static void main(String[] args) {
-        Student student = Builder.of(Student::new)
-                .with(Student::setName, "zhangsan")
-                .with(Student::setAge, 10)
-                .build();
-        System.out.println(student);
-        Builder.of(Student::new)
-                .with(Student::setName, ":", name -> !name.contains(":"))
-                .with(Student::setAge, 20)
-                .build();
     }
 
     // setter 方法
@@ -55,29 +43,15 @@ public final class Builder<T> {
         return instance;
     }
 
-    private static class Student {
-        private String name;
-        private Integer age;
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public Integer getAge() {
-            return age;
-        }
-
-        public void setAge(Integer age) {
-            this.age = age;
-        }
-
-        @Override
-        public String toString() {
-            return String.format("Student{name=\"%s\", age=%d}", name, age);
-        }
+    public static void main(String[] args) {
+        Student student = Builder.of(Student::new)
+                .with(Student::setName, "ZhangSan")
+                .with(Student::setAge, 10)
+                .build();
+        System.out.println(student);
+        Builder.of(Student::new)
+                .with(Student::setName, "LiSi")
+                .with(Student::setAge, 20, age -> age < 100)
+                .build();
     }
 }
