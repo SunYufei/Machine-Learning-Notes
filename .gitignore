@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+logs/
+node_modules/
+target/
+.DS_Store
+pnpm-lock.yaml
