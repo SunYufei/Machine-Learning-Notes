@@ -16,6 +16,10 @@
             <groupId>ml.sun</groupId>
             <artifactId>controller</artifactId>
         </dependency>
+        <dependency>
+            <groupId>ml.sun</groupId>
+            <artifactId>design-pattern</artifactId>
+        </dependency>
         <!-- test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -19,6 +19,7 @@
         <module>common</module>
         <module>aop</module>
         <module>controller</module>
+        <module>design-pattern</module>
         <module>test</module>
     </modules>
 
@@ -39,6 +40,11 @@
             <dependency>
                 <groupId>ml.sun</groupId>
                 <artifactId>controller</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ml.sun</groupId>
+                <artifactId>design-pattern</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
