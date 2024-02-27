@@ -25,6 +25,10 @@
             <groupId>ml.sun</groupId>
             <artifactId>design-pattern</artifactId>
         </dependency>
+        <dependency>
+            <groupId>ml.sun</groupId>
+            <artifactId>jpa</artifactId>
+        </dependency>
         <!-- test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

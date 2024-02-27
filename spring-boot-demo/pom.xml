@@ -20,6 +20,7 @@
         <module>aop</module>
         <module>controller</module>
         <module>design-pattern</module>
+        <module>jpa</module>
         <module>test</module>
     </modules>
 
@@ -47,6 +48,11 @@
                 <artifactId>design-pattern</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>ml.sun</groupId>
+                <artifactId>jpa</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -72,6 +78,7 @@
                 <configuration>
                     <compilerPlugins>
                         <plugin>spring</plugin>
+                        <plugin>jpa</plugin>
                     </compilerPlugins>
                 </configuration>
             </plugin>
