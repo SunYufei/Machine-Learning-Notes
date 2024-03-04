@@ -29,6 +29,10 @@
             <groupId>ml.sun</groupId>
             <artifactId>jpa</artifactId>
         </dependency>
+        <dependency>
+            <groupId>ml.sun</groupId>
+            <artifactId>redis</artifactId>
+        </dependency>
         <!-- test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

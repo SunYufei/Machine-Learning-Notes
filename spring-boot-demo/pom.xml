@@ -21,6 +21,7 @@
         <module>controller</module>
         <module>design-pattern</module>
         <module>jpa</module>
+        <module>redis</module>
         <module>test</module>
     </modules>
 
@@ -51,6 +52,11 @@
             <dependency>
                 <groupId>ml.sun</groupId>
                 <artifactId>jpa</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ml.sun</groupId>
+                <artifactId>redis</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
