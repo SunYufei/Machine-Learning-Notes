@@ -19,6 +19,10 @@
         </dependency>
         <dependency>
             <groupId>ml.sun</groupId>
+            <artifactId>aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ml.sun</groupId>
             <artifactId>controller</artifactId>
         </dependency>
         <dependency>
